@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+int main() {
+    int a,b;
+    char pt;
+    printf("Bai 3.Hoang Van Hoang 3517 - Tinh toan tren 2 so nguyen\n");
+    printf("Nhap so nguyen 1:");
+    scanf("%d",&a);
+    printf("Nhap so nguyen 2:");
+    scanf("%d",&b); 
+    printf("Hai so nguyen ban vua nhap la: %d \tva\t %d\n",a,b);
+    printf("Nhap phep toan:");
+    fflush(stdin);
+    scanf("%c",&pt);
+    if(pt=='+')
+        printf("Tong hai so nguyen = %d %c %d = %d\n",a,(b>0)?('+'):('-'),abs(b),a+b);
+    if(pt=='-')
+        printf("Hieu 2 so nguyen = %d - %d = %d\n",a,b,a-b);
+    if(pt=='*')
+        printf("Tich 2 so nguyen = %d * %d = %d",a,b,a*b);
+    if(pt=='/')
+        printf("Thuong hai so nguyen = %d / %d = %.2f",a,b,(float)a/b);
+        getch();
+}
